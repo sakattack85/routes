@@ -1,0 +1,9 @@
+<div *ngFor="let product of myproducts">
+<p>{{product.name}}</p>
+</div>
+
+
+
+<a href="" [routerLink]="['../user']">Back</a>
+<br>
+<button class="btn btn-primary" (click)="navigate()">Back to user</button>
