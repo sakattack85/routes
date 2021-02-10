@@ -1,4 +1,4 @@
 <div *ngFor="let user of myusers">
     <p>{{user.name}}</p>
-    <button class='btn btn-primary'>See more</button>
+    <button class='btn btn-primary' (click)="seemore(user.id)">See more</button>
     </div>

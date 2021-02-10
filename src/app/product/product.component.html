@@ -1,8 +1,9 @@
 <div *ngFor="let product of myproducts">
-<p>{{product.name}}</p>
+<p [routerLink]="['productdetails',product.id]">{{product.name}}</p>
+
 </div>
 
-
+<router-outlet></router-outlet>
 
 <a href="" [routerLink]="['../user']">Back</a>
 <br>
